@@ -3,10 +3,10 @@ export default function Refer() {
     <div className='component pb-24'>
       <div className='maxWidth flexCol gap-6'>
         <div className='headerContainer'>
-          <div className='header'>Refer</div>
+          <div className='header'>Invite</div>
           <img src='./icons/appIcon.svg' alt='' className='profilePic ' />
         </div>
-        <div className='flexCol gap-8'>
+        <div className='flexCol gap-10'>
           <div className='contentHeader'>And you can both save $10.</div>
           <div className='referCard'>
             <div className='referCardItem'>

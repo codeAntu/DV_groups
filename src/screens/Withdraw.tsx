@@ -12,33 +12,52 @@ export default function Withdraw() {
                   <input type='text' className='input' placeholder='Enter Withdraw Amount' />
                 </div>
               </div>
-              <div>Withdraw Amount: ₹0.00</div>
-              <div className='inputContainer'>
-                <div className='inputText'>Trade Password</div>
-                <div className='inputBox'>
-                  <input type='text' className='input' placeholder='Please Enter Trade Password' />
+              <div className='text-sm font-semibold text-black/30 '>
+                Withdraw Charges: <span className='text-[#EE3838]'> ₹0.00</span>{' '}
+              </div>
+              <div className='flex flex-col gap-1.5'>
+                <div className='inputContainer'>
+                  <div className='inputText'>Bank IFSC</div>
+                  <div className='inputBox'>
+                    <input type='text' className='input' placeholder='Enter your IFSC code' />
+                  </div>
+                </div>
+                <div className='inputContainer'>
+                  <div className='inputText'>Account Holder Name</div>
+                  <div className='inputBox'>
+                    <input type='text' className='input' placeholder='Enter your Account Holder Name' />
+                  </div>
+                </div>
+                <div className='inputContainer'>
+                  <div className='inputText'>Bank Account Number</div>
+                  <div className='inputBox'>
+                    <input type='text' className='input' placeholder='Enter your Bank Account Number' />
+                  </div>
+                </div>
+                <div className='inputContainer'>
+                  <div className='inputText'>Bank Name</div>
+                  <div className='inputBox'>
+                    <input type='text' className='input' placeholder='Enter your Bank Name' />
+                  </div>
                 </div>
               </div>
             </div>
             <div className='flexCol gap-2'>
-              <div className='flex justify-between'>
-                <div className='contentHeader'>Selected Receiving Bank Card</div>
-                <a className='contentHeader text-accent'>Add Card +</a>
-              </div>
-              <div className='flex flex-col gap-2'>
-                <label htmlFor='50000' className='flex items-center gap-2 text-sm font-semibold text-black/80'>
-                  <input type='radio' id='50000' name='quick-opt' className='radio ' />
-                  <div className=''>4065000100112784 (Name)</div>
+              <div className='contentHeader'>Select investment plan</div>
+              <div className='flex flex-col gap-3'>
+                <label htmlFor='200' className='flex items-center gap-2 text-sm font-semibold text-black/80'>
+                  <input type='radio' id='200' name='quick-opt' className='radio ' />
+                  <div className=''>₹200 (Beginner Plan)</div>
+                </label>
+                <label htmlFor='500' className='flex items-center gap-2 text-sm font-semibold text-black/80'>
+                  <input type='radio' id='500' name='quick-opt' className='radio ' />
+                  <div className=''>₹500 (Standard Plan)</div>
+                </label>
+                <label htmlFor='1000' className='flex items-center gap-2 text-sm font-semibold text-black/80'>
+                  <input type='radio' id='1000' name='quick-opt' className='radio ' />
+                  <div className=''>₹1000 (Refer Wallet)</div>
                 </label>
               </div>
-            </div>
-            <div className='flexCol gap-2'>
-              <div className='contentHeader font-medium'>Withdraw Instruction</div>
-              <ul className='list-disc px-5 text-[13px] text-black/40 '>
-                <li>Open the app and log in</li>
-                <li>Navigate to the "Withdraw" section</li>
-                <li>Select the amount, choose withdrawal method, and confirm the request</li>
-              </ul>
             </div>
           </div>
           <div className='flexCenter w-full py-4'>

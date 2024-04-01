@@ -83,17 +83,27 @@ export default function Details() {
               </div>
             </div>
           </div>
-          <div className='flexCenter relative w-full py-4'>
-            <div className='slidText'>Slide to Invest</div>
-            <input type='range' className='sliderCss' value='0' />
-          </div>
+          <div>
+            <div className='flexCenter relative w-full py-4'>
+              <div className='slidText'>Slide to Invest</div>
+              <input type='range' className='sliderCss' value='0' />
+            </div>
 
-          {/* for  -> You were already invested*/}
-          {/* Just replace this Div */}
-          {/* <div className='flexCenter relative w-full py-4 '>
-            <div className='slidText text-xs'>You were already invested disable </div>
-            <input type='range' className='sliderDisabled' disabled value='0' />
-          </div> */}
+            {/* for  -> You were already invested*/}
+            {/* <div className='flexCenter relative w-full py-4 '>
+              <div className='slidText text-xs'>You were already invested disable </div>
+              <input type='range' className='sliderDisabled' disabled value='0' />
+            </div> */}
+
+            {/* After investing */}
+            {/* <div className='flexCenter relative w-full rounded-full bg-[#C7C0BC] py-3 text-xl font-bold text-white'>
+              23 : 16 : 30
+            </div> */}
+
+            {/* <div className='flexCenter relative w-full rounded-full bg-accent py-3 text-base font-semibold text-white'>
+              Awaiting for approval...
+            </div> */}
+          </div>
         </div>
       </div>
     </div>

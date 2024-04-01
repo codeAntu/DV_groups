@@ -2,20 +2,20 @@ export default function Register() {
   return (
     <div className='font-Montserrat flex min-h-[100dvh] w-full items-center justify-center'>
       <div className='maxWidth flex w-full flex-col justify-center gap-10 p-5'>
-        <form action=''>
-          <div className='flex flex-col items-center gap-16'>
-            <img src='./icons/appIcon.svg' alt='' className='w-[60%] pt-6' />
-            <div className='flex flex-col items-center justify-center gap-2'>
-              <div className='text-3xl font-semibold text-accent'>Register</div>
-              <div className='text-sm font-semibold opacity-50'>Welcome to Incogroup investing app</div>
-            </div>
+        <div className='flex flex-col items-center gap-8'>
+          <img src='./icons/appIcon.svg' alt='' className='w-[30%] pt-8' />
+          <div className='flex flex-col items-center justify-center gap-2'>
+            <div className='text-3xl font-semibold text-accent'>Register</div>
+            <div className='text-sm font-semibold opacity-50'>Welcome to Incogroup investing app</div>
           </div>
+        </div>
+        <form action=''>
           <div className='flex flex-col gap-10'>
             <div className='flex flex-col gap-3'>
               <div className='inputContainer'>
                 <div className='inputText'>User Name</div>
                 <div className='inputBox'>
-                  <img src='./icons/phone.svg' alt='' className='inputIcon' />
+                  <img src='./icons/userName.svg' alt='' className='inputIcon' />
                   <input type='text' className='input' placeholder='Enter your usename' />
                 </div>
               </div>
@@ -36,7 +36,7 @@ export default function Register() {
               <div className='inputContainer'>
                 <div className='inputText'>Referral code (optional)</div>
                 <div className='inputBox'>
-                  <img src='./icons/phone.svg' alt='' className='inputIcon' />
+                  <img src='./icons/ref.svg' alt='' className='inputIcon' />
                   <input type='text' className='input' placeholder='Enter your referral code' />
                 </div>
               </div>

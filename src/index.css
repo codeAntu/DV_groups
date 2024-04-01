@@ -24,7 +24,7 @@
 
 @layer components {
   .component {
-    @apply flex min-h-[100dvh] justify-center;
+    @apply flex min-h-[100dvh] justify-center bg-[#FEFEFE];
   }
   .maxWidth {
     @apply w-full max-w-xl p-5;
@@ -120,10 +120,10 @@
   }
 
   .optionItem {
-    @apply flex items-center justify-between rounded-[14px] bg-accent/5 py-[18px] pl-3 pr-4;
+    @apply flex items-center justify-between rounded-[14px] bg-[#F5F8FF] py-[18px] pl-3 pr-4;
   }
   .optionItemTitle {
-    @apply text-sm font-semibold text-black/80;
+    @apply text-sm font-[550] text-accent;
   }
   .optionItemImg {
     @apply h-6 w-6;
@@ -182,10 +182,10 @@
   }
 
   .level {
-    @apply rounded-full border border-accent bg-accent/5 px-5 py-1.5 text-center text-sm font-semibold text-accent;
+    @apply rounded-full border border-accent bg-accent/5 px-5 py-2.5 text-center text-sm font-semibold text-accent;
   }
   .levelSelected {
-    @apply rounded-full border border-accent bg-accent px-5 py-1.5 text-center text-sm font-semibold text-white;
+    @apply rounded-full border border-accent bg-accent px-5 py-2.5 text-center text-sm font-semibold text-white;
   }
 
   .recordCard {
@@ -238,7 +238,7 @@
   }
 
   .mitraCard {
-    @apply flex gap-3 rounded-3xl bg-accent/5 p-4 pr-0;
+    @apply flex items-end gap-3 rounded-3xl bg-accent/5 p-4 pr-0;
   }
   .mitraHeader {
     @apply text-lg font-semibold;
@@ -268,7 +268,7 @@
     @apply flexCol gap-4;
   }
   .referCardItem {
-    @apply flex items-center justify-between gap-5;
+    @apply flex items-center justify-between gap-3.5;
   }
   .referIcon {
     @apply p-0;
@@ -278,7 +278,7 @@
     @apply text-sm font-semibold text-black/80;
   }
   .referIconRapper {
-    @apply w-[12%] rounded-full border-4 border-white shadow-lg;
+    @apply w-[15%] rounded-full;
   }
   .referTextContainer {
     @apply w-[85%];
@@ -300,23 +300,23 @@
     @apply flexCol flex-grow items-center justify-center gap-1 py-3;
   }
 
-  .menu {
-    @apply fixed -left-[1000px] top-0 z-20 flex  h-full w-9/12 max-w-[300px] flex-col justify-between rounded-r-3xl bg-white px-5 py-8 pt-20 duration-500;
+  .slider {
+    @apply fixed -left-[1000px] top-0 z-20 flex h-full w-9/12 max-w-[300px] flex-col justify-between rounded-r-3xl bg-white px-5 py-8 pt-20 duration-500;
   }
 
-  .menuItems {
+  .sliderItems {
     @apply flexCol gap-3;
   }
-  .menuItem {
+  .sliderItem {
     @apply flex items-center gap-3 rounded-[14px] p-3 text-sm font-semibold text-black/40;
   }
-  .menuItemActive {
+  .sliderItemActive {
     @apply flex items-center gap-3 rounded-[14px] border bg-accent p-3 text-sm font-semibold text-white;
   }
-  .menuItemIcon {
+  .sliderItemIcon {
     @apply w-5;
   }
-  .menuHide {
+  .sliderHide {
     @apply animateFedIn fixed left-0 top-0 z-10 hidden h-full w-full bg-black/50 duration-500;
   }
 
@@ -352,7 +352,7 @@
     @apply flex items-center  gap-2;
   }
   .SpecificationItemTitle {
-    @apply text-sm font-semibold text-black/30;
+    @apply text-[12px] font-semibold text-black/30;
   }
   .SpecificationItemValue {
     @apply text-[15px] font-[650] text-black;
@@ -382,6 +382,15 @@
   .withDrawItemValue {
     @apply text-sm font-[650] text-black;
   }
+  .member {
+    @apply flex items-center gap-3 rounded-2xl bg-[#F5F8FF] px-2.5 py-3  text-sm font-semibold text-accent;
+  }
+  .memberIcon {
+    @apply w-9;
+  }
+  .shareIcon {
+    @apply w-9;
+  }
 }
 
 .animateFedIn {
@@ -394,8 +403,8 @@
   height: 55px;
   border: none;
   outline: none;
-  padding: 6px;
-  background-color: #fc5f0f;
+  padding: 3px;
+  background-color: #1f3881;
   border-radius: 150px;
   overflow: hidden;
 }
@@ -416,8 +425,8 @@
 .sliderCss::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  height: 45px;
-  width: 45px;
+  height: 50px;
+  width: 50px;
   background: url('./icons/slider.svg');
   background-size: cover;
   border-radius: 150px;
