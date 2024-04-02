@@ -300,23 +300,23 @@
     @apply flexCol flex-grow items-center justify-center gap-1 py-3;
   }
 
-  .slider {
+  .menu {
     @apply fixed -left-[1000px] top-0 z-20 flex h-full w-9/12 max-w-[300px] flex-col justify-between rounded-r-3xl bg-white px-5 py-8 pt-20 duration-500;
   }
 
-  .sliderItems {
+  .menuItems {
     @apply flexCol gap-3;
   }
-  .sliderItem {
+  .menuItem {
     @apply flex items-center gap-3 rounded-[14px] p-3 text-sm font-semibold text-black/40;
   }
-  .sliderItemActive {
+  .menuItemActive {
     @apply flex items-center gap-3 rounded-[14px] border bg-accent p-3 text-sm font-semibold text-white;
   }
-  .sliderItemIcon {
+  .menuItemIcon {
     @apply w-5;
   }
-  .sliderHide {
+  .menuHide {
     @apply animateFedIn fixed left-0 top-0 z-10 hidden h-full w-full bg-black/50 duration-500;
   }
 

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css" />
+  </head>
+  <body>
+    <button id="popUpBtn">Pop Up</button>
+    <div id="popUp" class="popUp">
+      <div
+        class="flex w-10/12 flex-col items-center gap-8 rounded-3xl border bg-white px-5 py-6 backdrop-blur-2xl "
+      >
+        <div class="flex w-full flex-col items-center gap-6 px-6 text-center">
+          <div class="text-2xl font-semibold" id="text">Payment Method</div>
+
+          <div class="flex w-full flex-col gap-4">
+            <label htmlFor="UPI" class="flex items-center gap-2 text-sm font-semibold text-black/80">
+              <input type="radio" id="UPI" name="quick-opt" class="radio " />
+              <div class="">UPI</div>
+            </label>
+            <label htmlFor="QR_CODE" class="flex items-center gap-2 text-sm font-semibold text-black/80">
+              <input type="radio" id="QR_CODE" name="quick-opt" class="radio " />
+              <div class="">QR CODE</div>
+            </label>
+          </div>
+        </div>
+
+        <div class="flex w-full flex-col items-center gap-3 px-4">
+          <button class="buttonRounded2 w-full" id="btn1">Cancel</button>
+          <button class="buttonRounded w-full" id="btn2">Ok</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      const popUpBtn = document.getElementById('popUpBtn')
+      const popUp = document.getElementById('popUp')
+      const btn1 = document.getElementById('btn1')
+      const btn2 = document.getElementById('btn2')
+
+      popUpBtn.onclick = popUpHandler
+      popUp.onclick = closePopUp
+      btn1.onclick = () => {
+        closePopUp({ target: popUp })
+      }
+      btn2.onclick = () => {
+        closePopUp({ target: popUp })
+      }
+      function popUpHandler() {
+        popup()
+      }
+
+      function closePopUp(event) {
+        if (event.target === popUp) {
+          popUp.style.display = 'none'
+        }
+      }
+
+      function popup(options) {
+        document.getElementById('popUp').style.display = 'flex'
+      }
+    </script>
+  </body>
+</html>

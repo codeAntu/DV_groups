@@ -3,7 +3,7 @@ export default function Notification() {
     <div className='component pb-24'>
       <div className='maxWidth flexCol gap-8'>
         <div className='headerContainer'>
-          <div className='header'>Ranking</div>
+          <div className='header'>Notification</div>
           <img src='./icons/appIcon.svg' alt='' className='profilePic ' />
         </div>
         <div className='flex flex-col gap-4'>
