@@ -8,6 +8,21 @@ export default function Home() {
           </div>
           <img src='./icons/appIcon.svg' alt='' className='profilePic ' />
         </div>
+
+        <div className='swiper'>
+          <div className='swiper-wrapper'>
+            <a className='swiper-slide'>
+              <img src='./icons/temp.png' alt='' className='swiper-img' />
+            </a>
+            <a className='swiper-slide'>
+              <img src='./icons/temp.png' alt='' className='swiper-img' />
+            </a>
+            <a className='swiper-slide'>
+              <img src='./icons/temp.png' alt='' className='swiper-img' />
+            </a>
+          </div>
+          <div className='swiper-pagination'></div>
+        </div>
         <div className='flexCol fixed bottom-24  right-5 justify-center gap-0 '>
           <div className='rounded-full bg-[#F1F5FF] p-4'>
             <img src='./icons/support.svg' alt='' className='w-6' />

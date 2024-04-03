@@ -1218,6 +1218,17 @@ video {
   --tw-text-opacity: 1;
   color: rgb(9 9 9 / var(--tw-text-opacity));
 }
+.swiper {
+  width: 100%;
+}
+.swiper-img {
+  aspect-ratio: 2/1;
+  height: 100%;
+  width: 100%;
+  border-radius: 1.5rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
 .fixed {
   position: fixed;
 }
