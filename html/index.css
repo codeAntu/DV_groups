@@ -1293,11 +1293,14 @@ video {
 .min-h-\[100dvh\] {
   min-height: 100dvh;
 }
-.w-1\/2 {
-  width: 50%;
+.w-1\/4 {
+  width: 25%;
 }
 .w-10\/12 {
   width: 83.333333%;
+}
+.w-14 {
+  width: 3.5rem;
 }
 .w-2\/3 {
   width: 66.666667%;

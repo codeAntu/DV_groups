@@ -4,7 +4,7 @@ export default function Home() {
       <div className='maxWidth flexCol gap-4'>
         <div className='headerContainer'>
           <div className='header'>
-            <img src='./icons/appIcon.svg' alt='' className='w-20' />
+            <img src='./icons/appIcon.svg' alt='' className='w-14' />
           </div>
           <img src='./icons/appIcon.svg' alt='' className='profilePic ' />
         </div>

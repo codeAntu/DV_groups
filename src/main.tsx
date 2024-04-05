@@ -41,7 +41,6 @@ import PaymentMethod from './screens/PaymentMethod.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <Test />
     <Login />
     <Register />
     <ForgotPassword />
