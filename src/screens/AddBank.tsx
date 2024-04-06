@@ -2,10 +2,7 @@ export default function AddBank() {
   return (
     <div>
       <button id='addBankButton'>Add Bank</button>
-      <div
-        id='addBank'
-        className='addBank'
-      >
+      <div id='addBank' className='addBank'>
         <div className='w-full font-bold'>Add New Bank Card</div>
         <div className='flex w-full flex-col items-center gap-2.5'>
           <div className='flex w-full flex-col gap-0.5'>
@@ -61,7 +58,6 @@ export default function AddBank() {
       <div className='close ' id='close'>
         Close
       </div>
-      
     </div>
   )
 }

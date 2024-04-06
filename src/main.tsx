@@ -47,10 +47,10 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <UpdatePassword />
     <SplashScreen />
     <Otp />
-     <MyFamily />
+    <MyFamily />
     <Refer />
     <Home />
-    <Slider  /> 
+    <Slider />
     <Plans />
     <Details />
     <Profile />
