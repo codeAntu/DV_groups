@@ -37,7 +37,8 @@ export default function PaymentMethod() {
 
 // payment method
 
-{/* <div>
+{
+  /* <div>
 <button id='popUpBtn'>Pop Up</button>
 <div id='popUp' className='popUp'>
   <div className='flex w-10/12 flex-col items-center gap-8 rounded-3xl border bg-white px-5 py-6 backdrop-blur-2xl '>
@@ -68,4 +69,5 @@ export default function PaymentMethod() {
     </div>
   </div>
 </div>
-</div> */}
+</div> */
+}

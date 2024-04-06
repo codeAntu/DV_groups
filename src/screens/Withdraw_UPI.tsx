@@ -22,8 +22,8 @@ export default function Withdraw_OTP() {
                     <input type='text' className='input' placeholder='Please enter your UPI ID' />
                   </div>
                 </div>
-                <div className='flex items-center rounded-lg bg-[#EE3838]/40 p-1 gap-1 my-2'>
-                  <img src='./icons/info.svg' alt='' className="w-5" />
+                <div className='my-2 flex items-center gap-1 rounded-lg bg-[#EE3838]/40 p-1'>
+                  <img src='./icons/info.svg' alt='' className='w-5' />
                   <div className='text-xs text-[#EE3838]'>UPI ID Change Not Allowed</div>
                 </div>
                 <div className='inputContainer'>
