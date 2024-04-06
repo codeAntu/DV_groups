@@ -38,10 +38,11 @@ import History from './screens/History.tsx'
 import Ranking from './screens/Ranking.tsx'
 import Notification from './screens/Notification.tsx'
 import PaymentMethod from './screens/PaymentMethod.tsx'
+import Temp from './screens/Temp.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <Login />
+    {/* <Login />
     <Register />
     <ForgotPassword />
     <UpdatePassword />
@@ -64,7 +65,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <Ranking />
     <Notification />
     <PaymentMethod />
-    <Nav />
+    <Nav /> */}
+    <Temp />
 
     {/* <TaskSystem /> */}
     {/* <PopOver /> */}
