@@ -49,6 +49,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <Otp />
     <MyFamily />
     <Refer />
+    <History />
     <Home />
     <Slider />
     <Plans />
