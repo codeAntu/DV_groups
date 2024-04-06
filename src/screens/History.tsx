@@ -108,6 +108,10 @@ export default function History() {
             </div>
           </div>
         </div>
+        <div className='flex h-full flex-col items-center justify-center gap-5 pb-10'>
+          <img src='./icons/noMember.svg' alt='' className='w-24' />
+          <div className='text-center text-sm font-semibold text-accent '>No History </div>
+        </div>
       </div>
     </div>
   )
