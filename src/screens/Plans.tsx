@@ -12,7 +12,7 @@ export default function Plans() {
         </div>
         <div className='flexCol gap-3'>
           <div className='productCard'>
-            <div className='flex items-start'>
+            <div className='flex'>
               <div className='status pending '>
                 <img src='./icons/pending.svg' alt='' className='statusImg' />
                 <div>Pending</div>
@@ -46,7 +46,7 @@ export default function Plans() {
             </div>
           </div>
           <div className='productCard'>
-            <div className='flex items-start'>
+            <div className='flex'>
               <div className='status approved'>
                 <img src='./icons/approved.svg' alt='' className='statusImg' />
                 <div>Approved</div>
@@ -80,7 +80,7 @@ export default function Plans() {
             </div>
           </div>
           <div className='productCard'>
-            <div className='flex items-start'>
+            <div className='flex'>
               <div className='status rejected'>
                 <img src='./icons/rejected.svg' alt='' className='statusImg' />
                 <div>Rejected</div>
