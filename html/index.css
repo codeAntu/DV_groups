@@ -1714,6 +1714,10 @@ video {
 .leading-tight {
   line-height: 1.25;
 }
+.text-\[\#35D49C\] {
+  --tw-text-opacity: 1;
+  color: rgb(53 212 156 / var(--tw-text-opacity));
+}
 .text-\[\#C7C0BC\] {
   --tw-text-opacity: 1;
   color: rgb(199 192 188 / var(--tw-text-opacity));

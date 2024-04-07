@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css" />
+  </head>
+  <body>
+    <main id="main" selector="main"></main>
+    <div id="root">
+      <div class="component flex justify-center">
+        <div class="maxWidth flexCol flex-grow gap-4">
+          <div class="header">QR PAYMENT</div>
+          <div class="content">
+            <div class="flexCol items-center gap-5 bg-accent">
+              <div class="text-sm font-semibold">
+                You have requested <span class="text-accent">5000.00 INR</span>. Please pay
+                <span class="text-accent">5000.00 INR</span> for successful payment
+              </div>
+              <img src="./img/qr.svg" alt="" class="w-10/12" />
+              <div class="text-center text-xs font-medium text-[#EE3838]">
+                *Deposited amount will be credit within 48 hours
+              </div>
+              <div class="inputContainer">
+                <div class="inputText">UTR Number</div>
+                <div class="inputBox">
+                  <input type="text" class="input" placeholder="Enter UTR Number" />
+                </div>
+              </div>
+            </div>
+            <div class="flexCenter w-full flex-col gap-3">
+              <button class="buttonRounded w-full py-4 text-sm font-semibold">Pay Now</button>
+              <div class="flex items-center justify-center gap-2">
+                <img src="./icons/lock.svg" alt="" class="w-5" />
+                <div class="text-xs text-[#35D49C]">Your payment is secured</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

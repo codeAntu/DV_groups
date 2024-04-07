@@ -39,6 +39,8 @@ import Ranking from './screens/Ranking.tsx'
 import Notification from './screens/Notification.tsx'
 import PaymentMethod from './screens/PaymentMethod.tsx'
 import Temp from './screens/Temp.tsx'
+import QR from './screens/QR.tsx'
+import UPI from './screens/UPI.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -66,7 +68,10 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <Notification />
     <PaymentMethod />
     <Nav /> */}
-    <Temp />
+    {/* <Temp /> */}
+
+    <QR />
+    <UPI />
 
     {/* <TaskSystem /> */}
     {/* <PopOver /> */}
