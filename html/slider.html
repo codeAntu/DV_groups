@@ -76,7 +76,10 @@
         menu.style.display = 'flex'
         menu.style.left = '0'
         menuHide.style.display = 'block'
-        menuHide.style.backdropFilter = 'blur(10px)'
+        menuHide.style.backdropFilter = 'blur(0px)'
+        setTimeout(() => {
+          menuHide.style.backdropFilter = 'blur(10px)'
+        }, 10)
       }
 
       function closeMenu() {

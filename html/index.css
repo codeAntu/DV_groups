@@ -944,7 +944,6 @@ video {
   height: 100%;
   width: 100%;
   transition-duration: 0.5s;
-  animation: blur 0.5s ease-in-out;
 }
 .otpInput {
   aspect-ratio: 1.1;
@@ -1862,15 +1861,5 @@ video {
   }
   to {
     opacity: 0.5;
-  }
-}
-@keyframes blur {
-  0% {
-    -webkit-backdrop-filter: blur(0);
-    backdrop-filter: blur(0);
-  }
-  to {
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
   }
 }

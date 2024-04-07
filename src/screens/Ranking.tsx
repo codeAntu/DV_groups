@@ -11,28 +11,15 @@ export default function Ranking() {
           <div className='level '>REFER WISE</div>
         </div>
         <div className='flex flex-col gap-3'>
-          <div className='flex items-center gap-3'>
-            <div className='rankNum'>1</div>
-            <div>
-              <div className='rankingName'>Code Antu</div>
-              <div className='rankingAmount'> Amount: ₹ 71095.50</div>
+          <div className='flex items-center justify-between'>
+            <div className='flex items-center gap-3'>
+              <div className='rankNum'>1</div>
+              <div>
+                <div className='rankingName'>Code Antu</div>
+                <div className='rankingAmount'> Amount: ₹ 71095.50</div>
+              </div>
             </div>
-          </div>
-          <hr />
-          <div className='flex items-center gap-3'>
-            <div className='rankNum'>2</div>
-            <div>
-              <div className='rankingName'>Code Antu</div>
-              <div className='rankingAmount'> Amount: ₹ 71095.50</div>
-            </div>
-          </div>
-          <hr />
-          <div className='flex items-center gap-3'>
-            <div className='rankNum'>3</div>
-            <div>
-              <div className='rankingName'>Code Antu</div>
-              <div className='rankingAmount'> Amount: ₹ 71095.50</div>
-            </div>
+              <img src='./icons/1.svg' alt='' className='w-6' />
           </div>
           <hr />
         </div>

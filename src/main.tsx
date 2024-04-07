@@ -70,8 +70,10 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <Nav /> */}
     {/* <Temp /> */}
 
-    <QR />
-    <UPI />
+    {/* <QR /> */}
+    {/* <UPI /> */}
+    <LiveReport />
+    {/* <Ranking /> */}
 
     {/* <TaskSystem /> */}
     {/* <PopOver /> */}

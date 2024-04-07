@@ -317,7 +317,7 @@
     @apply w-5;
   }
   .menuHide {
-    @apply animateBlur fixed left-0 top-0 z-10 hidden h-full w-full duration-500;
+    @apply fixed left-0 top-0 z-10 hidden h-full w-full duration-500;
   }
 
   .otpInput {
@@ -492,14 +492,5 @@
   }
   to {
     opacity: 0.5;
-  }
-}
-
-@keyframes blur {
-  0% {
-    backdrop-filter: blur(0);
-  }
-  to {
-    backdrop-filter: blur(10px);
   }
 }

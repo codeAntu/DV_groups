@@ -3,7 +3,10 @@ export default function LiveReport() {
     <div className='component pb-24'>
       <div className='maxWidth flexCol gap-8'>
         <div className='headerContainer'>
-          <div className='header'>Live Report</div>
+          <div className='flex items-center gap-2'>
+            <div className='header'>Live Report</div>
+            <img src='./img/live.png' alt='' className='w-8' />
+          </div>
           <img src='./icons/appIcon.svg' alt='' className='profilePic ' />
         </div>
         <div className='grid grid-cols-2 gap-3'>
@@ -11,6 +14,10 @@ export default function LiveReport() {
           <div className='level text-xs'>LATEST WITHDRAW</div>
         </div>
         <div className='flex flex-col gap-3'>
+          <div className='reportCard flex-row justify-between'>
+            <div className='font-semibold'>Total Withdraw</div>
+            <div className='text-xl font-semibold'>₹10,00,00,000</div>
+          </div>
           <div className='reportCard'>
             <div className='flex items-center justify-between'>
               <div>
