@@ -301,7 +301,7 @@
   }
 
   .menu {
-    @apply fixed -left-[1000px] top-0 z-20 flex h-full w-9/12 max-w-[300px] flex-col justify-between rounded-r-3xl bg-white px-5 py-8 pt-20 duration-500;
+    @apply fixed -left-[1000px] shadow-xl top-0 z-20 flex h-full w-9/12 max-w-[300px] flex-col justify-between rounded-r-3xl bg-white px-5 py-8 pt-20 duration-500;
   }
 
   .menuItems {
@@ -317,7 +317,7 @@
     @apply w-5;
   }
   .menuHide {
-    @apply animateFedIn fixed left-0 top-0 z-10 hidden h-full w-full bg-black/50 duration-500;
+    @apply animateBlur fixed left-0 top-0 z-10 hidden h-full w-full duration-500;
   }
 
   .otpInput {
@@ -435,6 +435,9 @@
 .animateFedIn {
   animation: fadeIn 0.5s ease-in-out;
 }
+.animateBlur {
+  animation: blur 0.5s ease-in-out;
+}
 
 .sliderCss {
   appearance: none;
@@ -489,5 +492,14 @@
   }
   to {
     opacity: 0.5;
+  }
+}
+
+@keyframes blur {
+  0% {
+    backdrop-filter: blur(0);
+  }
+  to {
+    backdrop-filter: blur(10px);
   }
 }

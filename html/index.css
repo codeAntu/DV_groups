@@ -896,6 +896,9 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding: 5rem 1.25rem 2rem;
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   transition-duration: 0.5s;
 }
 .menuItems {
@@ -940,9 +943,8 @@ video {
   display: none;
   height: 100%;
   width: 100%;
-  background-color: #00000080;
   transition-duration: 0.5s;
-  animation: fadeIn 0.5s ease-in-out;
+  animation: blur 0.5s ease-in-out;
 }
 .otpInput {
   aspect-ratio: 1.1;
@@ -1802,6 +1804,9 @@ video {
 .animateFedIn {
   animation: fadeIn 0.5s ease-in-out;
 }
+.animateBlur {
+  animation: blur 0.5s ease-in-out;
+}
 .sliderCss {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1857,5 +1862,15 @@ video {
   }
   to {
     opacity: 0.5;
+  }
+}
+@keyframes blur {
+  0% {
+    -webkit-backdrop-filter: blur(0);
+    backdrop-filter: blur(0);
+  }
+  to {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
   }
 }
