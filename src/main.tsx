@@ -72,9 +72,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 
     {/* <QR /> */}
     {/* <UPI /> */}
-    <LiveReport />
+    {/* <LiveReport /> */}
     {/* <Ranking /> */}
-
+    <Home />
     {/* <TaskSystem /> */}
     {/* <PopOver /> */}
     {/* <Recharge /> */}

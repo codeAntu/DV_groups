@@ -58,12 +58,15 @@ export default function Home() {
                 <img src='./icons/wallet2.svg' alt='' className='w-9' />
               </div>
             </div>
-            <div className='flex gap-3'>
+            <div className='flex items-center gap-3'>
               <div>
                 <button className='buttonRounded px-5'>
                   <img src='./icons/withdraw.svg' alt='' className='buttonIcon' />
                   <div className='text-xs'>Withdraw</div>
                 </button>
+              </div>
+              <div>
+                <img src='./icons/swap.svg' alt='' className='w-10 ' />
               </div>
             </div>
           </div>

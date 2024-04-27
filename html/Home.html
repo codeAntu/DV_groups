@@ -60,7 +60,29 @@
                 <img src="./icons/robot.svg" alt="" class="h" />
               </div>
             </div>
-            <div class="walletCard">
+            <div class="walletCard" id="walletCard_1">
+              <div class="flex items-center justify-between">
+                <div>
+                  <div class="text-sm font-medium">wallet Balance</div>
+                  <div class="text-3xl font-semibold text-accent">$ 3000.00</div>
+                </div>
+                <div>
+                  <img src="./icons/wallet2.svg" alt="" class="w-9" />
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <div>
+                  <button class="buttonRounded px-5">
+                    <img src="./icons/withdraw.svg" alt="" class="buttonIcon" />
+                    <div class="text-xs">Withdraw</div>
+                  </button>
+                </div>
+                <div id="swap_1">
+                  <img src="./icons/swap.svg" alt="" class="w-10" />
+                </div>
+              </div>
+            </div>
+            <div class="walletCard hidden" id="walletCard_2">
               <div class="flex items-center justify-between">
                 <div>
                   <div class="text-sm font-medium">wallet Balance</div>
@@ -70,12 +92,15 @@
                   <img src="./icons/wallet2.svg" alt="" class="w-9" />
                 </div>
               </div>
-              <div class="flex gap-3">
+              <div class="flex items-center gap-3">
                 <div>
                   <button class="buttonRounded px-5">
                     <img src="./icons/withdraw.svg" alt="" class="buttonIcon" />
                     <div class="text-xs">Withdraw</div>
                   </button>
+                </div>
+                <div id="swap_2">
+                  <img src="./icons/swap.svg" alt="" class="w-10" />
                 </div>
               </div>
             </div>
@@ -122,6 +147,21 @@
       </a>
     </div>
     <script>
+      const walletCard_1 = document.getElementById('walletCard_1')
+      const walletCard_2 = document.getElementById('walletCard_2')
+      const swap_1 = document.getElementById('swap_1')
+      const swap_2 = document.getElementById('swap_2')
+
+      swap_1.addEventListener('click', () => {
+        walletCard_1.style.display = 'none'
+        walletCard_2.style.display = 'flex'
+      })
+
+      swap_2.addEventListener('click', () => {
+        walletCard_1.style.display = 'flex'
+        walletCard_2.style.display = 'none'
+      })
+
       const swiper = new Swiper('.swiper', {
         // Optional parameters
         direction: 'horizontal',

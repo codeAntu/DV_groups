@@ -22,10 +22,28 @@
           </div>
           <div class="flexCol gap-3">
             <div class="productCard">
-              <div class="flex">
+              <div class="flex justify-between">
                 <div class="status pending">
                   <img src="./icons/pending.svg" alt="" class="statusImg" />
                   <div>Pending</div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg width="25" height="25" viewBox="0 0 160 160" style="transform: rotate(-90deg)">
+                    <circle r="70" cx="80" cy="80" fill="transparent" stroke="#1F388150" stroke-width="20px"></circle>
+                    <circle
+                      r="70"
+                      cx="80"
+                      cy="80"
+                      id="circle"
+                      fill="transparent"
+                      stroke="#1F3881"
+                      stroke-linecap="round"
+                      stroke-width="20px"
+                      stroke-dasharray="439.6px"
+                      stroke-dashoffset="109.9px"
+                    ></circle>
+                  </svg>
+                  <div class="text-sm font-semibold text-accent">30 of 180</div>
                 </div>
               </div>
               <div class="flex gap-3">
@@ -127,5 +145,18 @@
         </div>
       </div>
     </div>
+    <script>
+      const circle = document.getElementById('circle')
+      const radius = circle.r.baseVal.value
+      const circumference = radius * 2 * Math.PI
+      circle.style.strokeDasharray = `${circumference}px`
+
+      function setProgress(percent) {
+        const offset = circumference - (percent / 100) * circumference
+        circle.style.strokeDashoffset = offset
+      }
+
+      setProgress(67)
+    </script>
   </body>
 </html>
