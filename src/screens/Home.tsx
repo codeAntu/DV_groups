@@ -3,9 +3,13 @@ export default function Home() {
     <div className='component pb-24'>
       <div className='maxWidth flexCol gap-4'>
         <div className='headerContainer'>
-          <div className='header'>
-            <img src='./icons/appIcon.svg' alt='' className='w-14' />
-          </div>
+        <div className="header flex items-center gap-3">
+              <img src="./icons/menuIcon.svg" alt="" className="w-14" />
+              <div>
+                <div className="text-sm font-medium leading-none text-black/40">Hello</div>
+                <div className="line-clamp-1 text-2xl font-semibold leading-none text-black/80">John Doe</div>
+              </div>
+            </div>
           <img src='./icons/appIcon.svg' alt='' className='profilePic ' />
         </div>
 

@@ -1715,6 +1715,9 @@ video {
 .leading-3 {
   line-height: 0.75rem;
 }
+.leading-none {
+  line-height: 1;
+}
 .leading-tight {
   line-height: 1.25;
 }
