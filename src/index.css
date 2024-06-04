@@ -300,9 +300,9 @@
     @apply flexCol flex-grow items-center justify-center gap-1 py-3;
   }
 
-  .menu {
-    @apply fixed -left-[1000px] shadow-xl top-0 z-20 flex h-full w-9/12 max-w-[300px] flex-col justify-between rounded-r-3xl bg-white px-5 py-8 pt-20 duration-500;
-  }
+    .menu {
+      @apply fixed -left-[1000px] shadow-xl top-0 z-20 flex h-full w-9/12 max-w-[300px] flex-col justify-between rounded-r-3xl bg-white px-5 py-8 pt-20 duration-500;
+    }
 
   .menuItems {
     @apply flexCol gap-3;

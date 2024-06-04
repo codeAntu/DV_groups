@@ -44,7 +44,7 @@ import UPI from './screens/UPI.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    {/* <Login />
+    <Login />
     <Register />
     <ForgotPassword />
     <UpdatePassword />
@@ -67,7 +67,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <Ranking />
     <Notification />
     <PaymentMethod />
-    <Nav /> */}
+    <Nav />
     {/* <Temp /> */}
 
     {/* <QR /> */}
