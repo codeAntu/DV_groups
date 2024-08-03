@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css" />
+  </head>
+  <body>
+    <main id="main" selector="main"></main>
+    <div id="root">
+      <div class='flex min-h-[100dvh] justify-center bg-[#FEFEFE] '>
+        <div class='w-full max-w-xl flex-grow flex-col gap-4 p-5 '>
+          <div class='flex items-center justify-between '>
+            <div class='py-4 text-[26px] font-semibold'>UPI PAYMENT</div>
+            <div class='rounded-full border border-[#FC5F0F] px-4 py-0.5 text-lg font-medium text-[#FC5F0F]'>
+              15:20
+            </div>
+          </div>
+          <div class='flex flex-col gap-4'>
+            <div class='flex w-full flex-col gap-1'>
+              <div class='text-base font-medium'>Bank Holder Name</div>
+              <div class='flex w-full items-center justify-end gap-3 rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-3.5 py-3.5 '>
+                <input
+                  type='text'
+                  class='w-full border-none bg-transparent text-lg font-semibold text-black outline-none'
+                  placeholder='Enter your Name'
+                />
+                <img src='./icons/copyText.svg' alt='' class='w-[22px] ' />
+              </div>
+            </div>
+            <div class='flex w-full flex-col gap-1'>
+              <div class='text-base font-medium'>Bank Account Number</div>
+              <div class='flex w-full items-center justify-end gap-3 rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-3.5 py-3.5 '>
+                <input
+                  type='number'
+                  class='w-full border-none bg-transparent text-lg font-semibold text-black outline-none'
+                  placeholder='Enter your Account Number'
+                />
+                <img src='./icons/copyText.svg' alt='' class='w-[22px] ' />
+              </div>
+            </div><div class='flex w-full flex-col gap-1'>
+              <div class='text-base font-medium'>Bank IFSC Code</div>
+              <div class='flex w-full items-center justify-end gap-3 rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-3.5 py-3.5 '>
+                <input
+                  type='text'
+                  class='w-full border-none bg-transparent text-lg font-semibold text-black outline-none'
+                  placeholder='Enter your IFSC Code'
+                />
+                <img src='./icons/copyText.svg' alt='' class='w-[22px] ' />
+              </div>
+            </div><div class='flex w-full flex-col gap-1'>
+              <div class='text-base font-medium'>Bank Name</div>
+              <div class='flex w-full items-center justify-end gap-3 rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-3.5 py-3.5 '>
+                <input
+                  type='text'
+                  class='w-full border-none bg-transparent text-lg font-semibold text-black outline-none'
+                  placeholder='Enter your Bank Name'
+                />
+                <img src='./icons/copyText.svg' alt='' class='w-[22px] ' />
+              </div>
+            </div><div class='flex w-full flex-col gap-1'>
+              <div class='text-base font-medium'>Amount</div>
+              <div class='flex w-full items-center justify-end gap-3 rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-3.5 py-3.5 '>
+                <input
+                  type='number'
+                  class='w-full border-none bg-transparent text-lg font-semibold text-black outline-none'
+                  placeholder='Enter your Amount'
+                />
+                <img src='./icons/copyText.svg' alt='' class='w-[22px] ' />
+              </div>
+            </div><div class='flex w-full flex-col gap-1'>
+              <div class='text-base font-medium'>UTR Number</div>
+              <div class='flex w-full items-center justify-end gap-3 rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-3.5 py-3.5 '>
+                <input
+                  type='number'
+                  class='w-full border-none bg-transparent text-lg font-semibold text-black outline-none'
+                  placeholder='Enter your UTR Number'
+                />
+              </div>
+            </div>
+          </div>
+          <div class='text-2 flex h-full flex-col justify-between pt-14'>
+            <div class='flex w-full flex-col items-center justify-center gap-3'>
+              <button class='w-full rounded-xl bg-[#FC5F0F] py-4 text-base font-normal text-white'>Pay Now</button>
+              <div class='flex items-center justify-center gap-2'>
+                <img src='./icons/lock.svg' alt='' class='w-5' />
+                <div class='text-sm text-[#35D49C]'>Your payment is secured</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

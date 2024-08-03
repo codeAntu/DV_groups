@@ -10,31 +10,62 @@
   <body>
     <main id="main" selector="main"></main>
     <div id="root">
-      <div class="component flex justify-center">
-        <div class="maxWidth flexCol flex-grow gap-4">
-          <div class="header">QR PAYMENT</div>
-          <div class="content">
-            <div class="flexCol items-center gap-5">
-              <div class="text-sm font-semibold">
-                You have requested <span class="text-accent">5000.00 INR</span>. Please pay
-                <span class="text-accent">5000.00 INR</span> for successful payment
-              </div>
-              <img src="./img/qr.svg" alt="" class="w-10/12" />
-              <div class="text-center text-xs font-medium text-[#EE3838]">
-                *Deposited amount will be credit within 48 hours
-              </div>
-              <div class="inputContainer">
-                <div class="inputText">UTR Number</div>
-                <div class="inputBox">
-                  <input type="text" class="input" placeholder="Enter UTR Number" />
-                </div>
+      <div class='flex min-h-[100dvh] justify-center bg-[#FEFEFE] '>
+        <div class='w-full max-w-xl flex-grow flex-col gap-4 p-5 '>
+          <div class='flex items-center justify-between '>
+            <div class='py-4 text-[26px] font-semibold'>UPI PAYMENT</div>
+            <div class='rounded-full border border-[#FC5F0F] px-4 py-0.5 text-lg font-medium text-[#FC5F0F]'>
+              15:20
+            </div>
+          </div>
+          <div class='flex flex-col items-center justify-center py-5'>
+            <img src='./img/qr.svg' alt='' class='px-14 ' />
+            <img src='./img/paymentApps.png ' alt='' class='px-14' />
+            <button class='flex items-center justify-center gap-2 rounded-full border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F] px-16 py-2 text-xs font-normal text-white'>
+              <img src='./img/downArrow.svg' alt='' class='w-7' />
+              <div>DOWNLOAD QR</div>
+            </button>
+          </div>
+          <div class='flex flex-col gap-3'>
+            <div class='flex w-full flex-col gap-1'>
+              <div class='text-sm font-semibold opacity-45'>UPI ID</div>
+              <div class='flex w-full items-center justify-end gap-3 rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-3.5 py-3.5 '>
+                <input
+                  type='text'
+                  class='w-full border-none bg-transparent text-lg font-semibold outline-none text-black'
+                  placeholder='Enter your UPI ID'
+                />
+                <img src='./icons/copyText.svg' alt='' class='w-[22px] ' />
               </div>
             </div>
-            <div class="flexCenter w-full flex-col gap-3 pt-10">
-              <button class="buttonRounded w-full py-4 text-sm font-semibold">Pay Now</button>
-              <div class="flex items-center justify-center gap-2">
-                <img src="./icons/lock.svg" alt="" class="w-5" />
-                <div class="text-xs text-[#35D49C]">Your payment is secured</div>
+            <div class='flex w-full flex-col gap-1'>
+              <div class='text-sm font-semibold opacity-45'>Amount</div>
+              <div class='flex w-full items-center justify-end gap-3 rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-3.5 py-3.5 '>
+                <input
+                  type='number'
+                  class='w-full border-none bg-transparent text-lg font-semibold outline-none'
+                  placeholder='Enter your Amount'
+                />
+                <img src='./icons/copyText.svg' alt='' class='w-[22px] ' />
+              </div>
+            </div>
+            <div class='flex w-full flex-col gap-1'>
+              <div class='text-sm font-semibold opacity-45'>UTR Number</div>
+              <div class='flex w-full items-center justify-end gap-3 rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-3.5 py-3.5 '>
+                <input
+                  type='number'
+                  class='w-full border-none bg-transparent text-lg font-semibold outline-none'
+                  placeholder='Enter your UTR Number'
+                />
+              </div>
+            </div>
+          </div>
+          <div class='text-2 flex h-full flex-col justify-between pt-10'>
+            <div class='flex w-full flex-col items-center justify-center gap-3'>
+              <button class='w-full rounded-xl bg-[#FC5F0F] py-4 text-base font-normal text-white'>Pay Now</button>
+              <div class='flex items-center justify-center gap-2'>
+                <img src='./icons/lock.svg' alt='' class='w-5' />
+                <div class='text-sm text-[#35D49C]'>Your payment is secured</div>
               </div>
             </div>
           </div>

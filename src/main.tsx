@@ -39,51 +39,13 @@ import Ranking from './screens/Ranking.tsx'
 import Notification from './screens/Notification.tsx'
 import PaymentMethod from './screens/PaymentMethod.tsx'
 import Temp from './screens/Temp.tsx'
-import QR from './screens/QR.tsx'
+import QR from './screens/New/QR.tsx'
 import UPI from './screens/UPI.tsx'
+import BankPayment from './screens/New/BankPayment.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <Login />
-    <Register />
-    <ForgotPassword />
-    <UpdatePassword />
-    <SplashScreen />
-    <Otp />
-    <MyFamily />
-    <Refer />
-    <History />
-    <Home />
-    <Slider />
-    <Plans />
-    <Details />
-    <Profile />
-    <Withdraw />
-    <Withdraw_OTP />
-    <Maintenance />
-    <Banned />
-    <LiveReport />
-    <History />
-    <Ranking />
-    <Notification />
-    <PaymentMethod />
-    <Nav />
-    {/* <Temp /> */}
-
-    {/* <QR /> */}
-    {/* <UPI /> */}
-    {/* <LiveReport /> */}
-    {/* <Ranking /> */}
-    <Home />
-    {/* <TaskSystem /> */}
-    {/* <PopOver /> */}
-    {/* <Recharge /> */}
-    {/* <VIPLevel /> */}
-    {/* <MyRecords /> */}
-    {/* <MyCard /> */}
-    {/* <EnterCode /> */}
-    {/* <AddBank /> */}
-    {/* <WithdrawLog /> */}
-    {/* <App /> */}
+    {/* <BankPayment /> */}
+    <QR />
   </React.StrictMode>,
 )
