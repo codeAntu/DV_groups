@@ -1,6 +1,6 @@
 export default function BankPayment() {
   return (
-    <div className='flex min-h-[100dvh] justify-center bg-[#FEFEFE] '>
+    <div className='flex min-h-[100dvh] items-center justify-center bg-[#FEFEFE] '>
       <div className='w-full max-w-xl flex-grow flex-col gap-4 p-5 '>
         <div className='flex items-center justify-between '>
           <div className='py-4 text-[26px] font-semibold'>UPI PAYMENT</div>
@@ -30,7 +30,8 @@ export default function BankPayment() {
               />
               <img src='./icons/copyText.svg' alt='' className='w-[22px] ' />
             </div>
-          </div><div className='flex w-full flex-col gap-1'>
+          </div>
+          <div className='flex w-full flex-col gap-1'>
             <div className='text-base font-medium'>Bank IFSC Code</div>
             <div className='flex w-full items-center justify-end gap-3 rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-3.5 py-3.5 '>
               <input
@@ -40,7 +41,8 @@ export default function BankPayment() {
               />
               <img src='./icons/copyText.svg' alt='' className='w-[22px] ' />
             </div>
-          </div><div className='flex w-full flex-col gap-1'>
+          </div>
+          <div className='flex w-full flex-col gap-1'>
             <div className='text-base font-medium'>Bank Name</div>
             <div className='flex w-full items-center justify-end gap-3 rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-3.5 py-3.5 '>
               <input
@@ -50,7 +52,8 @@ export default function BankPayment() {
               />
               <img src='./icons/copyText.svg' alt='' className='w-[22px] ' />
             </div>
-          </div><div className='flex w-full flex-col gap-1'>
+          </div>
+          <div className='flex w-full flex-col gap-1'>
             <div className='text-base font-medium'>Amount</div>
             <div className='flex w-full items-center justify-end gap-3 rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-3.5 py-3.5 '>
               <input
@@ -60,7 +63,8 @@ export default function BankPayment() {
               />
               <img src='./icons/copyText.svg' alt='' className='w-[22px] ' />
             </div>
-          </div><div className='flex w-full flex-col gap-1'>
+          </div>
+          <div className='flex w-full flex-col gap-1'>
             <div className='text-base font-medium'>UTR Number</div>
             <div className='flex w-full items-center justify-end gap-3 rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-3.5 py-3.5 '>
               <input

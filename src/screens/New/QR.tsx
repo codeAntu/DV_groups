@@ -1,6 +1,6 @@
 export default function QR() {
   return (
-    <div className='flex min-h-[100dvh] justify-center bg-[#FEFEFE] '>
+    <div className='flex min-h-[100dvh] items-center justify-center bg-[#FEFEFE] '>
       <div className='w-full max-w-xl flex-grow flex-col gap-4 p-5 '>
         <div className='flex items-center justify-between '>
           <div className='py-4 text-[26px] font-semibold'>UPI PAYMENT</div>
@@ -22,7 +22,7 @@ export default function QR() {
             <div className='flex w-full items-center justify-end gap-3 rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-3.5 py-3.5 '>
               <input
                 type='text'
-                className='w-full border-none bg-transparent text-lg font-semibold outline-none text-black'
+                className='w-full border-none bg-transparent text-lg font-semibold text-black outline-none'
                 placeholder='Enter your UPI ID'
               />
               <img src='./icons/copyText.svg' alt='' className='w-[22px] ' />
