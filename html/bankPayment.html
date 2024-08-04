@@ -10,88 +10,166 @@
   <body>
     <main id="main" selector="main"></main>
     <div id="root">
-      <div class='flex items-center min-h-[100dvh] justify-center bg-[#FEFEFE] '>
-        <div class='w-full max-w-xl flex-grow flex-col gap-4 p-5 '>
-          <div class='flex items-center justify-between '>
-            <div class='py-4 text-[26px] font-semibold'>UPI PAYMENT</div>
-            <div class='rounded-full border border-[#FC5F0F] px-4 py-0.5 text-lg font-medium text-[#FC5F0F]'>
-              15:20
+      <div class="flex min-h-[100dvh] items-center justify-center bg-[#FEFEFE]">
+        <div class="w-full max-w-xl flex-grow flex-col gap-4 p-5">
+          <div class="flex items-center justify-between">
+            <div class="py-4 text-[26px] font-semibold">UPI PAYMENT</div>
+            <div class="rounded-full border border-[#FC5F0F] px-4 py-0.5 text-lg font-medium text-[#FC5F0F]" id="timer">
+              15:00
             </div>
           </div>
-          <div class='flex flex-col gap-4'>
-            <div class='flex w-full flex-col gap-1'>
-              <div class='text-base font-medium'>Bank Holder Name</div>
-              <div class='flex w-full items-center justify-end gap-3 rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-3.5 py-3.5 '>
+          <div class="flex flex-col gap-4">
+            <div class="flex w-full flex-col gap-1">
+              <div class="text-base font-medium">Bank Holder Name</div>
+              <div
+                class="flex w-full items-center justify-end gap-3 rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-3.5 py-3.5"
+              >
                 <input
-                  type='text'
-                  class='w-full border-none bg-transparent text-lg font-semibold text-black outline-none'
-                  placeholder='Enter your Name'
+                  type="text"
+                  class="w-full border-none bg-transparent text-lg font-semibold text-black outline-none"
+                  placeholder="Enter your Name"
+                  id="bankHolderName"
                 />
-                <img src='./icons/copyText.svg' alt='' class='w-[22px] ' />
+                <img src="./icons/copyText.svg" alt="" class="w-[22px]" id="copyBankHolderName" />
               </div>
             </div>
-            <div class='flex w-full flex-col gap-1'>
-              <div class='text-base font-medium'>Bank Account Number</div>
-              <div class='flex w-full items-center justify-end gap-3 rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-3.5 py-3.5 '>
+            <div class="flex w-full flex-col gap-1">
+              <div class="text-base font-medium">Bank Account Number</div>
+              <div
+                class="flex w-full items-center justify-end gap-3 rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-3.5 py-3.5"
+              >
                 <input
-                  type='number'
-                  class='w-full border-none bg-transparent text-lg font-semibold text-black outline-none'
-                  placeholder='Enter your Account Number'
+                  type="number"
+                  class="w-full border-none bg-transparent text-lg font-semibold text-black outline-none"
+                  placeholder="Enter your Account Number"
+                  id="accountNumber"
                 />
-                <img src='./icons/copyText.svg' alt='' class='w-[22px] ' />
+                <img src="./icons/copyText.svg" alt="" class="w-[22px]" id="copyAccountNumber"/>
               </div>
-            </div><div class='flex w-full flex-col gap-1'>
-              <div class='text-base font-medium'>Bank IFSC Code</div>
-              <div class='flex w-full items-center justify-end gap-3 rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-3.5 py-3.5 '>
+            </div>
+            <div class="flex w-full flex-col gap-1">
+              <div class="text-base font-medium">Bank IFSC Code</div>
+              <div
+                class="flex w-full items-center justify-end gap-3 rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-3.5 py-3.5"
+              >
                 <input
-                  type='text'
-                  class='w-full border-none bg-transparent text-lg font-semibold text-black outline-none'
-                  placeholder='Enter your IFSC Code'
+                  type="text"
+                  class="w-full border-none bg-transparent text-lg font-semibold text-black outline-none"
+                  placeholder="Enter your IFSC Code"
+                  id="ifscCode"
                 />
-                <img src='./icons/copyText.svg' alt='' class='w-[22px] ' />
+                <img src="./icons/copyText.svg" alt="" class="w-[22px]"   id="copyIfscCode"/>
               </div>
-            </div><div class='flex w-full flex-col gap-1'>
-              <div class='text-base font-medium'>Bank Name</div>
-              <div class='flex w-full items-center justify-end gap-3 rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-3.5 py-3.5 '>
+            </div>
+            <div class="flex w-full flex-col gap-1">
+              <div class="text-base font-medium">Bank Name</div>
+              <div
+                class="flex w-full items-center justify-end gap-3 rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-3.5 py-3.5"
+              >
                 <input
-                  type='text'
-                  class='w-full border-none bg-transparent text-lg font-semibold text-black outline-none'
-                  placeholder='Enter your Bank Name'
+                  type="text"
+                  class="w-full border-none bg-transparent text-lg font-semibold text-black outline-none"
+                  placeholder="Enter your Bank Name"
+                  id="bankName"
                 />
-                <img src='./icons/copyText.svg' alt='' class='w-[22px] ' />
-              </div>
-            </div><div class='flex w-full flex-col gap-1'>
-              <div class='text-base font-medium'>Amount</div>
-              <div class='flex w-full items-center justify-end gap-3 rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-3.5 py-3.5 '>
-                <input
-                  type='number'
-                  class='w-full border-none bg-transparent text-lg font-semibold text-black outline-none'
-                  placeholder='Enter your Amount'
+                <img src="./icons/copyText.svg" alt="" class="w-[22px]" 
+                  id="copyBankName"
                 />
-                <img src='./icons/copyText.svg' alt='' class='w-[22px] ' />
               </div>
-            </div><div class='flex w-full flex-col gap-1'>
-              <div class='text-base font-medium'>UTR Number</div>
-              <div class='flex w-full items-center justify-end gap-3 rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-3.5 py-3.5 '>
+            </div>
+            <div class="flex w-full flex-col gap-1">
+              <div class="text-base font-medium">Amount</div>
+              <div
+                class="flex w-full items-center justify-end gap-3 rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-3.5 py-3.5"
+              >
                 <input
-                  type='number'
-                  class='w-full border-none bg-transparent text-lg font-semibold text-black outline-none'
-                  placeholder='Enter your UTR Number'
+                  type="number"
+                  class="w-full border-none bg-transparent text-lg font-semibold text-black outline-none"
+                  placeholder="Enter your Amount"
+                  id="amount"
+                />
+                <img src="./icons/copyText.svg" alt="" class="w-[22px]" 
+                  id="copyAmount"
+                />
+              </div>
+            </div>
+            <div class="flex w-full flex-col gap-1">
+              <div class="text-base font-medium">UTR Number</div>
+              <div
+                class="flex w-full items-center justify-end gap-3 rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-3.5 py-3.5"
+              >
+                <input
+                  type="number"
+                  class="w-full border-none bg-transparent text-lg font-semibold text-black outline-none"
+                  placeholder="Enter your UTR Number"
+                  
                 />
               </div>
             </div>
           </div>
-          <div class='text-2 flex h-full flex-col justify-between pt-14'>
-            <div class='flex w-full flex-col items-center justify-center gap-3'>
-              <button class='w-full rounded-xl bg-[#FC5F0F] py-4 text-base font-normal text-white'>Pay Now</button>
-              <div class='flex items-center justify-center gap-2'>
-                <img src='./icons/lock.svg' alt='' class='w-5' />
-                <div class='text-sm text-[#35D49C]'>Your payment is secured</div>
+          <div class="text-2 flex h-full flex-col justify-between pt-14">
+            <div class="flex w-full flex-col items-center justify-center gap-3">
+              <button class="w-full rounded-xl bg-[#FC5F0F] py-4 text-base font-normal text-white">Pay Now</button>
+              <div class="flex items-center justify-center gap-2">
+                <img src="./icons/lock.svg" alt="" class="w-5" />
+                <div class="text-sm text-[#35D49C]">Your payment is secured</div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script>
+      const timer = document.getElementById('timer')
+
+      function setTimer(mins = 15  , seconds = 0) {
+        let time = mins * 60 + seconds
+        setInterval(() => {
+          const minutes = Math.floor(time / 60)
+          const seconds = time % 60
+          timer.innerText = `${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`
+          time--
+        }, 1000)
+      }
+      setTimer(10 , 30)
+    </script>
+    <script>
+      const bankHolderName = document.getElementById('bankHolderName')
+      const accountNumber = document.getElementById('accountNumber')
+      const ifscCode = document.getElementById('ifscCode')
+      const bankName = document.getElementById('bankName')
+      const amount = document.getElementById('amount')
+      const payNow = document.querySelector('button')
+      
+      const copyBankHolderName = document.getElementById('copyBankHolderName')
+      const copyAccountNumber = document.getElementById('copyAccountNumber')
+      const copyIfscCode = document.getElementById('copyIfscCode')
+      const copyBankName = document.getElementById('copyBankName')
+      const copyAmount = document.getElementById('copyAmount')
+
+      copyBankHolderName.addEventListener('click', () => {
+        navigator.clipboard.writeText(bankHolderName.value)
+      })
+
+      copyAccountNumber.addEventListener('click', () => {
+        navigator.clipboard.writeText(accountNumber.value)
+      })
+
+      copyIfscCode.addEventListener('click', () => {
+        navigator.clipboard.writeText(ifscCode.value)
+      })
+
+      copyBankName.addEventListener('click', () => {
+        navigator.clipboard.writeText(bankName.value)
+      })
+
+      copyAmount.addEventListener('click', () => {
+        navigator.clipboard.writeText(amount.value)
+      })
+
+      
+
+
+    </script>
   </body>
 </html>

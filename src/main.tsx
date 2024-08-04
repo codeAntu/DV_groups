@@ -45,7 +45,7 @@ import BankPayment from './screens/New/BankPayment.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    {/* <BankPayment /> */}
+    <BankPayment />
     <QR />
   </React.StrictMode>,
 )
